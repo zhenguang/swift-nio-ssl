@@ -98,7 +98,7 @@ for target in "${targets[@]}"; do
 
   if [ "$target" == "CNIOBoringSSL" ] || [ "$target" == "CNIOBoringSSLShims" ]; then
     libraries="s.libraries = 'c++'"
-    xcconfig="s.xcconfig = { 'HEADER_SEARCH_PATHS' => 'Sources/${target}/include', 'CLANG_CXX_LANGUAGE_STANDARD' => 'c++11', }"
+    xcconfig="s.xcconfig = { 'HEADER_SEARCH_PATHS' => 'Sources/${target}/include', 'CLANG_CXX_LANGUAGE_STANDARD' => 'c++14', }"
     public_header_files="s.public_header_files = 'Sources/${target}/include/*.h'"
   fi
 
